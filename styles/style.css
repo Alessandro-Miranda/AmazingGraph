@@ -1,0 +1,167 @@
+.header
+{
+    padding: 3.375rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu
+{
+    display: none;
+}
+
+.header__logo
+{
+    font-size: 2rem;
+    font-weight: var(--fontBold);
+    color: var(--orange);
+}
+
+.header__icon
+{
+    font-size: 1.875rem;
+    margin-right: -1rem;
+}
+
+.container
+{
+    max-width: 100vw;
+    padding: 0rem 3rem; 
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    max-width: 100%;
+}
+
+.content__banner
+{
+    max-width: 100%;
+}
+
+.content__banner--image
+{
+    max-width: 100%;
+}
+
+.content__title
+{
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.content__text
+{
+    font-size: 1.175rem;
+}
+
+.content__callToAction
+{
+    display: block;
+    text-decoration: none;
+    background-color: var(--orange);
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 20px;
+    font-weight: var(--fontBold);
+    color: white;
+    font-size: 1.375rem;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 43.75rem)
+{
+    *
+    {
+        text-align: left;
+    }
+
+    .header
+    {
+        max-width: 81.25rem;
+        margin: 0 auto;
+    }
+
+    .header__logo
+    {
+        font-size: 3rem;
+    }
+
+    .header__menu
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header__menu__items
+    {
+        list-style-type: none;
+        margin-right: 1.875rem;
+    }
+
+    .header__menu__items--text
+    {
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    .header__icon
+    {
+        display: none;
+    }
+
+    .container
+    {
+        max-width: 81.25rem;
+        margin: 7rem auto 0 auto;
+    }
+
+    .content
+    {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: unset;
+        position: relative;
+    }
+
+    .content__banner
+    {
+        max-width: 60%;
+    }
+
+    .content__title
+    {
+        font-size: 5rem;
+    }
+    
+    .content__textContainer
+    {
+        position: absolute;
+        left: 3.5rem;
+        margin-top: -4rem;
+        max-width: 50%;
+    }
+    
+    .content__text
+    {
+        font-size: 2.05rem;
+        width: 80%;
+    }
+
+    .content__callToAction
+    {
+        width: 57%;
+        padding: 1.375rem 0;
+        border-radius: 20px;
+        color: white;
+        font-size: 2rem;
+        margin-top: 2.875rem;
+        text-align: center;
+    }
+}
